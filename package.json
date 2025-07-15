@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Grunt-based build for chatbot-ai",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"No tests defined\"",
-    "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
-  },
+"scripts": {
+  "test": "echo \"No tests defined\"",
+  "dev": "webpack serve --mode development",
+  "build": "node ./node_modules/webpack/bin/webpack.js --mode production"
+},
+
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
