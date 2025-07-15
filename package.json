@@ -8,5 +8,16 @@
   },
   "devDependencies": {
     "grunt": "^1.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FikriAnwar0/chatbot-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FikriAnwar0/chatbot-ai/issues"
+  },
+  "homepage": "https://github.com/FikriAnwar0/chatbot-ai#readme"
 }
