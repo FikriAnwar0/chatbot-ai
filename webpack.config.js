@@ -1,29 +1,29 @@
 const path = require('path');
 
 module.exports = {
-  entry: './main.js', // Tetap pakai main.js karena kamu pakai itu di root
+  entry: './main.js', // entry point kamu tetap
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true, // hapus otomatis file lama di dist saat build baru
+    clean: true // hapus file lama di dist
   },
   mode: 'production',
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'], // kalau pakai CSS import
+        use: ['style-loader', 'css-loader'] // dukung import css
       },
       {
-        test: /\.js$/i,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // opsional, kalau pakai ES6
+          loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-    ],
+            presets: ['@babel/preset-env'] // dukung ES6+
+          }
+        }
+      }
+    ]
   }
 };

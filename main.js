@@ -1,3 +1,5 @@
+import './style.css';
+
 // ========== MathJax Configuration ========== //
 window.MathJax = {
     tex: {

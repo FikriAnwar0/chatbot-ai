@@ -13,24 +13,13 @@
     "@babel/preset-env": "^7.28.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
-    "grunt": "^1.6.1",
-    "grunt-contrib-uglify": "^5.2.2",
-    "gulp": "^5.0.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.100.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "grunt": "^1.6.1",
+    "grunt-contrib-uglify": "^5.2.2",
+    "gulp": "^5.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FikriAnwar0/chatbot-ai.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FikriAnwar0/chatbot-ai/issues"
-  },
-  "homepage": "https://github.com/FikriAnwar0/chatbot-ai#readme",
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
@@ -129,5 +118,13 @@
     "v8flags": "^3.2.0",
     "which": "^2.0.2",
     "wrappy": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FikriAnwar0/chatbot-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FikriAnwar0/chatbot-ai/issues"
+  },
+  "homepage": "https://github.com/FikriAnwar0/chatbot-ai#readme"
 }
