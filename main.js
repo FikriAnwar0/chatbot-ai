@@ -231,8 +231,8 @@ const stopBtn = document.getElementById('stop-btn');
 let isStreaming = false;
 let controller;
 
-const API_KEY = "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";
-const MODEL_NAME = "deepseek/deepseek-chat-v3-0324:free";
+const API_KEY = "";
+const MODEL_NAME = "";
 
 sendBtn.addEventListener('click', sendMessage);
 chatInput.addEventListener('keydown', e => {
