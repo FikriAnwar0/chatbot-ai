@@ -6,29 +6,32 @@ on:
   pull_request:
     branches: ["main"]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+      - name: 🧱 Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # versi bisa disesuaikan
+          ruby-version: '3.1' # Bisa disesuaikan
 
-      - name: Install Jekyll
+      - name: 🧰 Install Jekyll
         run: |
           gem install bundler jekyll
 
-      - name: Build Jekyll site
+      - name: 🛠️ Build Jekyll site
         run: |
           jekyll build --trace
 
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v3
+      - name: 📦 Upload built site
+        uses: actions/upload-artifact@v4
         with:
           name: jekyll-site
           path: _site
