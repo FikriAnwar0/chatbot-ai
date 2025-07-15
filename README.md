@@ -38,6 +38,7 @@ chatbot-ai/
 ├── style.css      # Dark theme and modern styling
 ├── main.js        # Chat logic, rendering, and session handling
 └── README.md      # You’re reading it now 😄
+```
 
 ---
 
