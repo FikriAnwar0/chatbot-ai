@@ -5,15 +5,15 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"No tests defined\"",
-    "dev": "npx webpack serve --mode development",
-    "build": "npx webpack --mode production"
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "grunt": "^1.6.1",
     "grunt-contrib-uglify": "^5.2.2",
     "gulp": "^5.0.1",
     "webpack": "^5.100.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^5.1.4"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/FikriAnwar0/chatbot-ai#readme",
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "abbrev": "^1.1.1",
     "ansi-styles": "^4.3.0",
     "argparse": "^1.0.10",
