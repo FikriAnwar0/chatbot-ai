@@ -1,12 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow will install Deno then run `deno lint` and `deno test`.
-# For more information see: https://github.com/denoland/setup-deno
-
-name: Deno
+name: Frontend Lint & Validate
 
 on:
   push:
@@ -14,29 +6,35 @@ on:
   pull_request:
     branches: ["main"]
 
-permissions:
-  contents: read
-
 jobs:
-  test:
+  lint-frontend:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          deno-version: v1.x
+          node-version: "20"
 
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      # - name: Verify formatting
-      #   run: deno fmt --check
+      - name: Install linters
+        run: |
+          npm init -y
+          npm install --save-dev eslint stylelint htmlhint
 
-      - name: Run linter
-        run: deno lint
+      - name: Create config files
+        run: |
+          echo '{ "extends": "eslint:recommended", "env": { "browser": true, "es2021": true } }' > .eslintrc.json
+          echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
+          echo '{ "tagname-lowercase": true, "attr-lowercase": true }' > .htmlhintrc
 
-      - name: Run tests
-        run: deno test -A
+      - name: Lint JavaScript with ESLint
+        run: npx eslint . --ext .js
+
+      - name: Lint CSS with stylelint
+        run: npx stylelint "**/*.css"
+
+      - name: Validate HTML with HTMLHint
+        run: npx htmlhint "**/*.html"
