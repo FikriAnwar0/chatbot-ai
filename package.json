@@ -1,0 +1,12 @@
+{
+  "name": "chatbot-ai",
+  "version": "1.0.0",
+  "description": "Grunt-based build for chatbot-ai",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"No tests defined\""
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1"
+  }
+}
