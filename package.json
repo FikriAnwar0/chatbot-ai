@@ -4,12 +4,15 @@
   "description": "Grunt-based build for chatbot-ai",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"No tests defined\""
+    "test": "echo \"No tests defined\"",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "grunt": "^1.6.1",
     "grunt-contrib-uglify": "^5.2.2",
-    "gulp": "^5.0.1"
+    "gulp": "^5.0.1",
+    "webpack": "^5.100.1",
+    "webpack-cli": "^6.0.1"
   },
   "repository": {
     "type": "git",
