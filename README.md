@@ -6,8 +6,6 @@ A fully responsive, beautifully designed ChatGPT-style chatbot web app built wit
 
 ## 🌐 Live Preview
 
-<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/fb7fd7a7-ebd0-4b39-b9e5-6cb273c17d16" />
-
 🟢 Deployed on: **[Vercel](https://chatbot-ai-pied-rho.vercel.app)**  
 🔗 Live App: [https://chatbot-ai-pied-rho.vercel.app](https://chatbot-ai-pied-rho.vercel.app)
 
@@ -36,18 +34,15 @@ A fully responsive, beautifully designed ChatGPT-style chatbot web app built wit
 chatbot-ai/
 ├── index.html     # Main layout
 ├── style.css      # Dark theme and modern styling
-├── main.js        # Chat logic, rendering, and session handling
-└── README.md      # You’re reading it now 😄
+└── main.js        # Chat logic, rendering, and session handling
 ```
 
 ---
 
 ## 📸 Screenshots
 
-> Gantilah gambar ini dengan tangkapan layar proyek kamu:
-
-- ![Screenshot 1](https://user-images.githubusercontent.com/yourusername/screenshot-1.png)
-- ![Screenshot 2](https://user-images.githubusercontent.com/yourusername/screenshot-2.png)
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/fb7fd7a7-ebd0-4b39-b9e5-6cb273c17d16" />
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/c82933bb-2c11-440c-a24b-7a8e483b8a8a" />
 
 ---
 
