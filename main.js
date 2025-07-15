@@ -1,4 +1,5 @@
 import './style.css';
+import './src/index.js';
 
 // ========== MathJax Configuration ========== //
 window.MathJax = {
