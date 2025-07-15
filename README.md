@@ -4,13 +4,6 @@ A fully responsive, beautifully designed ChatGPT-style chatbot web app built wit
 
 ---
 
-## 🌐 Live Preview
-
-🟢 Deployed on: **[Vercel](https://chatbot-ai-pied-rho.vercel.app)**  
-🔗 Live App: [https://chatbot-ai-pied-rho.vercel.app](https://chatbot-ai-pied-rho.vercel.app)
-
----
-
 ## ✨ Features
 
 | Feature                         | Description                                                                 |
